@@ -1,3 +1,11 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+html {
+    font-size:20px;
+}
+
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -5,3 +13,67 @@ table, th, td{
 th{
     background-color: lightgray;
 }
+
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+/*Components*/
+.product-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    align-content: flex-start;
+}
+.product-wrapper .product{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    padding: .325rem .75rem;
+    border: 1px solid #ccc;
+    flex: 0 0 24%;
+
+}
+/*Product Components*/
+    .product-wrapper .product h3{
+        margin:0;
+        margin-bottom: .325rem;
+    }
+/*End Product Components*/
+
+/*End Components*/
+
+@media only screen and (max-width: 768px) {
+/*Product Components*/
+
+.product-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    align-content: flex-start;
+}
+.product-wrapper .product{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    padding: .325rem .75rem;
+    border: 1px solid #ccc;
+    flex: 0 0 95vw;
+
+}
+/*Product Components*/
+    .product-wrapper .product h3{
+        margin:0;
+        margin-bottom: .325rem;
+    }
+}
+/*End Product Components*/
+
+/*End Components*/
