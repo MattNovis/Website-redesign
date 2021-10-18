@@ -97,3 +97,34 @@ th{
 /*End Product Components*/
 
 /*End Components*/
+
+/* bio components */
+
+.bio-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.bio-wrapper .bio {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1em;
+    border: 1px solid #ccc;
+    flex: 0 0 30%;
+    height: 85vh;
+    width: 85vw;
+}
+
+.bio-wrapper img {
+    width: 35%;
+    border: 1px solid black;
+}
+
+.info {
+    height: 50vh;
+    width: 50vw;
+}
+
+/* End of bio components */
