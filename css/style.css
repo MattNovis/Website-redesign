@@ -104,7 +104,7 @@ img{
     border: 1px solid black;
 }
 
-.info {
+.info2 {
     height: 50vh;
     width: 50vw;
 }
@@ -140,11 +140,11 @@ img{
         flex-flow: row wrap;
     }
 
-    .info h2 {
+    .info2 h2 {
         text-align: center;
     }
 
-    .info p {
+    .info2 p {
         text-align: center;
         display: flex;
         flex-flow: row wrap;
@@ -154,3 +154,77 @@ img{
 }
 
 /* End of bio mobile components  */
+
+/* Start of Spring Components  */
+.spring-wrapper .spring {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1em;
+    border: 1px solid #ccc;
+    flex: 0 0 30%;
+    height: 50vh;
+    width: 85vw;
+}
+
+.spring-wrapper img {
+    width: 35%;
+    border: 1px solid black;
+    height:100%;
+}
+
+.info {
+    height: 50vh;
+    width: 50vw;
+}
+
+.info h2 {
+    height: 50vh;
+    width: 50vw;
+}
+
+/* End of Spring Components */
+
+/* Start of Spring Mobile Components */
+
+@media only screen and (max-width: 768px) {
+
+.spring-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    }
+
+.spring-wrapper .spring {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    padding: 1em;
+    border: 1px solid #ccc;
+    align-items: center;
+    height: 1000px;
+    width: 85vw;
+    }
+
+.spring-wrapper img {
+    width: auto;
+    height: 90vh;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    } 
+
+.info h2 {
+    text-align: center;
+}
+
+.info p {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+}
+
+/* End of Spring Mobile Components */
