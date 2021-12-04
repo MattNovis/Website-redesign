@@ -783,8 +783,6 @@ nav{
 } 
 /*End Product Components*/
 
-/*End Components*/
-
 /* bio components */
 
 .bio-wrapper {
@@ -792,16 +790,19 @@ nav{
     flex-flow: column wrap;
     align-content: center;
     justify-content: flex-start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .bio-wrapper .bio {
     display: flex;
     flex-flow: column wrap;
-    padding: 1em;
-    border: 1px solid #ccc;
-    flex: 0 0 30%;
-    height: 85vh;
-    width: 85vw;
+    border: 1px solid black;
+    flex: 0 0 70%;
+    height: 90vh;
+    width: 90vw;
+    padding: 1rem;
+    background-color: var(--secondary-color);
 }
 
 .bio-wrapper img {
