@@ -720,8 +720,6 @@ nav{
 } 
 /*End Product Components*/
 
-/*End Components*/
-
 /* bio components */
 
 .bio-wrapper {
@@ -729,16 +727,23 @@ nav{
     flex-flow: column wrap;
     align-content: center;
     justify-content: flex-start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.bio-wrapper h1 {
+    text-align: center;
 }
 
 .bio-wrapper .bio {
     display: flex;
     flex-flow: column wrap;
-    padding: 1em;
-    border: 1px solid #ccc;
-    flex: 0 0 30%;
-    height: 85vh;
-    width: 85vw;
+    border: 1px solid black;
+    flex: 0 0 70%;
+    height: 90vh;
+    width: 90vw;
+    padding: 1rem;
+    background-color: var(--secondary-color);
 }
 
 .bio-wrapper img {
@@ -870,3 +875,62 @@ nav{
 }
 
 /* End of Spring Mobile Components */
+
+/* Start of Contact Page */
+
+.contact-title {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-description {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+}
+
+fieldset {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: .5rem 1rem 1rem;
+    border: 1px solid #999999;
+}
+
+fieldset legend {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: 'Nunito', 'Helvetica', 'Arial', sans-serif;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.form-group .form-control {
+    flex: 0 0 100%;
+    min-width: 1rem;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    padding: .25rem 0;
+}
+
+.personal-info {
+    text-align: center;
+}
+
+.personal-info li {
+    list-style-type: none;
+}
+
+/* End of Contact Page */
