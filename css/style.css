@@ -1,6 +1,6 @@
 :root{
     --primary-color: #2E5902;
-    --primary-color-accent:#8Ea3bf;
+    --primary-color-accent:#038B12;
     --secondary-color:#E0F9D1;
     --secondary-color-accent:#a5ba93;
     --tertiary-color: #4CBD51;
@@ -255,114 +255,43 @@ nav{
 /* End Header */
  /* Start footer */
 
- .foot{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    background-color: var(--primary-color);
-}
-.footbar-brand{
-    display: flex;
-    overflow: hidden;
-    background: url("../img/logo2.svg") no-repeat 0 0 /contain transparent;
-    background-position: center;
-    text-indent: -99999999px;
-    height: 3rem;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.footbar-brand:hover{
-    background: url("../img/Logo2-hover.svg") no-repeat 0 0 /contain transparent;
-    background-position: center;
-}
-
-@media screen and (min-width:992px) {
-    .footbar{
-        right: 10%;
-    }
-}
-
-
-.footbar,
-.footbar .dropdown ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.footbar a{
-    display: block;
-    overflow: hidden;
-    padding: 0.5rem .75rem;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-}
-.footbar a:hover{
-    background-color: var(--secondary-color);
-    color: var(--black);
-
-}
-
-.footbar .dropdown > ul {
-    background-color: var(--secondary-color);
-
-}
-.footbar .dropdown > ul a{
-    display: block;
-    overflow: hidden;
-    text-decoration: none;
-    font-size: .75em;
-    color: white;
-    width: 100%;
-}
-
-@media screen and (max-width:992px){
-    .footbar .dropdown > a:after{
-        right: 1rem;
-    }
-}
-
-@media screen and (min-width:992px){
-    .footbar-toggler {
-        display:none;
-    }
-    .footbar-brand{
-        flex: 0 0 5rem;
-        max-width: 2.5em;
-        left: 10%;
-    }
-    .footbar.open, .footbar{
-        flex-basis:content;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        align-content: flex-start;
-        align-items: flex-start;
-
-    }
-    .dropdown > ul{
-        position: absolute;
-
-    }
-
-}
-.foot p{ 
-    flex-basis:content;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+ .frow{
+    margin-left: -1rem;
+    margin-right:-1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
     align-content: flex-start;
-    align-items: flex-start;
-    flex: 0 0 100%;
+    flex: 0 0 80%;
     color: white;
-    padding: .5rem .75rem;
-    margin: 0;
 }
+.frow a{
+    color: white;
+}
+.frow a:hover{
+    color: var(--tertiary-color);
+}
+ footer{
+     background: var(--primary-color);
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-evenly;
+     align-content: flex-start;
+     align-items: flex-start;
+ }
+
+ .footer-list li,{
+     text-decoration: none;
+     list-style-type: none;
+     margin-bottom: 0;
+ }
+ .footer-list{
+     padding: 0;
+     margin-bottom: 0;
+     list-style-type: none;
+ }
+ 
+
 /* Start Grind system */
 
 .container,
@@ -380,10 +309,10 @@ nav{
 }
 
 /* 576px -- 768px -- 992px -- 1200px */
-@media screen and (min-width:576px) {.container {max-width: 576px;background-color: none;}}
-@media screen and (min-width:768px) {.container {max-width: 768px;background-color: none;}}
-@media screen and (min-width:992px) {.container {max-width: 992px;background-color: none;}}
-@media screen and (min-width:1200px) {.container {max-width: 1200px;background-color:none;}}
+@media screen and (min-width:576px) {.container,frow {max-width: 576px;background-color: none;}}
+@media screen and (min-width:768px) {.container,frow {max-width: 768px;background-color: none;}}
+@media screen and (min-width:992px) {.container,frow {max-width: 992px;background-color: none;}}
+@media screen and (min-width:1200px) {.container,frow {max-width: 1200px;background-color:none;}}
 
 .row{
     margin-left: -1rem;
@@ -660,7 +589,7 @@ nav{
 
 /*Home Page*/
 .home{
-    background: var(--primary-color);
+    background: var(--primary-color-accent);
     color: white;
     margin-bottom: 1rem;
 }
@@ -678,6 +607,13 @@ nav{
     max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.home-lists{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: flex-start;
+}
 .home-lists h2{
     text-align: center;
     background: var(--primary-color);
@@ -692,11 +628,12 @@ nav{
 .home-lists .btn.btn-secondary,
 .home-lists .btn.btn-secondary a{
     display: flex;
+    flex: row wrap;
     justify-content: center;
     align-content: space-between;
     align-content: center;
-    max-width: 80%;
-    margin: auto;
+    max-width: 100%;
+    
 }
 /*End Home Page*/
 .featured{
@@ -708,7 +645,7 @@ nav{
 .featured h2{
     text-align: center;
     color: var(--white);
-    background: var(--primary-color);
+    background: var(--primary-color-accent);
     margin-bottom: 0;
     margin-top: 0;
     padding-top: .125rem;
