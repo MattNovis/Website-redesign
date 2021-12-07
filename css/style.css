@@ -521,7 +521,8 @@ nav{
     color: black;
 }
 .product-cat :hover{
-    color:var(--tertiary-color);;
+    color:var(--white);
+    background: var(--primary-color);
 
 }
 /* End Product Categories */
