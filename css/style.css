@@ -280,11 +280,12 @@ nav{
      align-items: flex-start;
  }
 
- .footer-list li,{
+ .footer-list li {
      text-decoration: none;
      list-style-type: none;
      margin-bottom: 0;
  }
+ 
  .footer-list{
      padding: 0;
      margin-bottom: 0;
